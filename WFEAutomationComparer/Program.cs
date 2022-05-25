@@ -10,7 +10,7 @@ namespace WFEAutomationComparer // Note: actual namespace depends on the project
         {
             var sideFilesPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "Selenium Automations");
             var sideFiles = Directory.GetFiles(sideFilesPath, "DenverTest*");
-            var masterFile = @"D:\POCs\WFEAutomationComparer\WFEAutomationComparer\Selenium Automations\DenverTest.side";
+            var masterFile = Path.Combine(sideFilesPath, "DenverTest.side"); // @"D:\POCs\WFEAutomationComparer\WFEAutomationComparer\Selenium Automations\DenverTest.side";
 
             var sideFilesTargets = GetSidesTargets(sideFiles);
             var commonTargets = GetCommonTargets(sideFilesTargets);
@@ -23,22 +23,20 @@ namespace WFEAutomationComparer // Note: actual namespace depends on the project
         {
             foreach (var sideFile in sideFiles)
             {
+                // skipped updating the master file to retain all the duplicate functions in that
                 if (sideFile.Equals(masterFile))
                     continue;
                 UpdateSide(commonTargets, sideFile);
             }
-            //var data = File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "Selenium Automations", sideFile));
         }
 
         private static void UpdateSide(HashSet<string> commonTargets, string sideFile)
         {
-            //var lines = File.ReadAllLines(path);
-            // GetData, Deserialize, where target == commonTargets, update description
             bool changed = false;
             var sideFileData = GetSideFileData(sideFile);
             foreach (var command in sideFileData?.tests[0]?.commands)
             {
-                if (commonTargets.Contains(command.target))
+                if (!string.IsNullOrEmpty(command.target) && commonTargets.Contains(command.target) && !command.comment.EndsWith("--Duplicate"))
                 {
                     command.comment += "--Duplicate";
                     changed = true;
