@@ -1,0 +1,203 @@
+{
+  "id": "fc4e00e0-0dfa-4aa5-aa56-759bcd63d9ce",
+  "version": "2.0",
+  "name": "Template_1",
+  "url": "",
+  "tests": [{
+    "id": "4d44d95f-2519-475a-90ba-f4266b81a0f3",
+    "name": "Untitled",
+    "commands": [{
+      "id": "dd16bdf8-7ade-4a3f-8beb-b98b65c35587",
+      "comment": "Method Start Logon",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b6c9389-b882-4f44-ab8d-3713602b17e3",
+      "comment": "Method Complete Logon",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b1cf0fc-0122-4b48-9059-24a362fb45a4",
+      "comment": "Method Start SelectClient",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7c3b490-d47c-44d3-8939-5e285d82248f",
+      "comment": "Method Complete SelectClient",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c449ab69-61b2-462f-96be-e50b0c9890a0",
+      "comment": "Method Start SelectFilingPeriod",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4977f4b-0981-4d3f-bb7d-59e2dbc7458b",
+      "comment": "Method Complete SelectFilingPeriod",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6154aad7-cd33-4a1e-9c96-c431dc4eea9d",
+      "comment": "Method Start UploadFile",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d49b3af2-a743-4ca2-8774-bbdbccb72978",
+      "comment": "Method Complete UploadFile",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61c52823-6af5-45e2-a21c-71e2ff10d5f8",
+      "comment": "Method Start EnterTaxDetails",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6077df61-dd50-4a39-9557-774931882eed",
+      "comment": "Method Complete EnterTaxDetails",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd6ab180-8ef5-44e0-961f-d333cb8e69a7",
+      "comment": "Method Start EnterBankDetails",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "512ccbba-fd5a-43f8-a758-ec077eef3743",
+      "comment": "Method Sub Start ProcessACHCredit",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b587d0e-dfe2-4f91-802f-6b6f6019b5c8",
+      "comment": "Method Sub Complete ProcessACHCredit",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a4500f4-27c7-4af7-a803-4541a34a2cfe",
+      "comment": "Method Sub Start ProcessACHDebit",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2781ee78-b936-4bde-990a-04917ddd6c96",
+      "comment": "Method Sub Complete ProcessACHDebit",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b958ab60-838c-44a9-8348-51c23d07b871",
+      "comment": "Method Complete EnterBankDetails",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adb8f5e9-3a70-46ff-9803-beb9648e8d3c",
+      "comment": "Method Start GetSummary",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "225e23b5-aa24-45ff-b4be-2d304c2a62de",
+      "comment": "Method Complete GetSummary",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15ca1cfa-438a-4d67-8412-c5b63ea6a701",
+      "comment": "Method Start SubmitReturn",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a11d15c8-7556-413b-8fa6-04efdecfcc0f",
+      "comment": "Method Sub Start GetWebfileData",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af14ad82-9a1f-4fde-9013-66622516e1f8",
+      "comment": "Method Sub Complete GetWebfileData",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2b60c80-68ff-45ce-abc8-230bad0d1455",
+      "comment": "Method Sub Start GetEfileConfirmation",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8953fc7-9612-4ebf-883b-e311f0dc7007",
+      "comment": "Method Sub Complete GetEfileConfirmation",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c43dcbe1-e617-482f-8b64-881f671bc2f7",
+      "comment": "Method Sub Start GetEPayConfirmation",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "974837d4-1bdc-44af-a9ec-6c9feb07e9f2",
+      "comment": "Method Sub Complete GetEPayConfirmation",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "400cdd18-01e8-4cdf-9231-d4b00b4e3848",
+      "comment": "Method Complete SubmitReturn",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dc873c64-2f9c-4341-aa3c-0d764693bf09",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4d44d95f-2519-475a-90ba-f4266b81a0f3"]
+  }],
+  "urls": [],
+  "plugins": []
+}

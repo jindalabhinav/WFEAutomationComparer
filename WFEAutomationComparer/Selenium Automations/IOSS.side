@@ -1,0 +1,126 @@
+{
+  "id": "ac33164e-733e-4992-8dfb-647717973a55",
+  "version": "2.0",
+  "name": "IOSS",
+  "url": "https://cfspro.impots.gouv.fr",
+  "tests": [{
+    "id": "7558fe64-9511-42fe-8d86-362920eae110",
+    "name": "IOSS",
+    "commands": [{
+      "id": "9237d8c3-5d20-4a37-9672-e3a8384bd455",
+      "comment": "method start LogOn",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82cdc8e2-c085-4e26-a6d2-3bf94ed3b8ff",
+      "comment": "",
+      "command": "open",
+      "target": "https://cfspro-idp.impots.gouv.fr/oauth2/authorize?response_type=code&redirect_uri=https%3A%2F%2Fcfspro.impots.gouv.fr%2F%3Fopenidconnectcallback%3D1&nonce=1640264465_41141&client_id=id_cfspro_prod&display=&state=1640264465_41980&scope=openid%20profile%20email%20info",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4602a50e-d553-4e8f-9e6c-40813c70bf54",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "2576x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d59a6785-1b25-43b6-99f0-03ae305c90a5",
+      "comment": "username",
+      "command": "click",
+      "target": "id=ident",
+      "targets": [
+        ["id=ident", "id"],
+        ["name=user", "name"],
+        ["css=#ident", "css:finder"],
+        ["xpath=//input[@id='ident']", "xpath:attributes"],
+        ["xpath=//div[@id='lmdp']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34066c6-161b-4ff4-a558-2705e65fb1a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=ident",
+      "targets": [
+        ["id=ident", "id"],
+        ["name=user", "name"],
+        ["css=#ident", "css:finder"],
+        ["xpath=//input[@id='ident']", "xpath:attributes"],
+        ["xpath=//div[@id='lmdp']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "cyril.bray@avalara.com"
+    }, {
+      "id": "00229a54-1365-4118-86a5-2287acf12f4a",
+      "comment": "password",
+      "command": "click",
+      "target": "id=mdp",
+      "targets": [
+        ["id=mdp", "id"],
+        ["name=password", "name"],
+        ["css=#mdp", "css:finder"],
+        ["xpath=//input[@id='mdp']", "xpath:attributes"],
+        ["xpath=//div[@id='lmdp']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "714339af-9061-4940-b019-88f5c9c1bca9",
+      "comment": "",
+      "command": "type",
+      "target": "id=mdp",
+      "targets": [
+        ["id=mdp", "id"],
+        ["name=password", "name"],
+        ["css=#mdp", "css:finder"],
+        ["xpath=//input[@id='mdp']", "xpath:attributes"],
+        ["xpath=//div[@id='lmdp']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Clamart1978"
+    }, {
+      "id": "2a6f4511-c359-4196-b548-1581cb5b7d8d",
+      "comment": "signin",
+      "command": "click",
+      "target": "id=valider",
+      "targets": [
+        ["id=valider", "id"],
+        ["css=#valider", "css:finder"],
+        ["xpath=//button[@id='valider']", "xpath:attributes"],
+        ["xpath=//div[@id='lmdp']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb44087a-7cea-403e-9608-1cd691a0d64b",
+      "comment": "loginfail",
+      "command": "verifyElementPresent",
+      "target": "id=valider",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83e3408e-e2d3-4ea1-b880-2b3c97105d72",
+      "comment": "method complete LogOn",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d2fac643-c866-474d-8088-8a2232df0782",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7558fe64-9511-42fe-8d86-362920eae110"]
+  }],
+  "urls": ["https://cfspro.impots.gouv.fr/"],
+  "plugins": []
+}

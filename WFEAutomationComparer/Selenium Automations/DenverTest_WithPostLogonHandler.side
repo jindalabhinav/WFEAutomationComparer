@@ -1,0 +1,220 @@
+{
+    "id": "fc4e00e0-0dfa-4aa5-aa56-759bcd63d9ce",
+    "version": "2.0",
+    "name": "Template_1",
+    "url": "",
+    "tests": [{
+            "id": "4d44d95f-2519-475a-90ba-f4266b81a0f3",
+            "name": "DenverTest",
+            "commands": [{
+                    "id": "dd16bdf8-7ade-4a3f-8beb-b98b65c35587",
+                    "comment": "Method Start LogOn",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "c11130c5-c4e9-403e-8cda-8989019ef9eb",
+                    "comment": "",
+                    "command": "click",
+                    "target": "id=Dd-5",
+                    "targets": [["id=Dd-5", "id"], ["name=Dd-5", "name"], ["css=#Dd-5", "css:finder"], ["xpath=//input[@id='Dd-5']", "xpath:attributes"], ["xpath=//div[@id='ic_Dd-5']/input", "xpath:idRelative"], ["xpath=//input", "xpath:position"]],
+                    "value": ""
+                }, {
+                    "id": "8ae1cb07-e1de-4499-9e10-c88afe3eb14c",
+                    "comment": "username",
+                    "command": "type",
+                    "target": "id=Dd-5",
+                    "targets": [["id=Dd-5", "id"], ["name=Dd-5", "name"], ["css=#Dd-5", "css:finder"], ["xpath=//input[@id='Dd-5']", "xpath:attributes"], ["xpath=//div[@id='ic_Dd-5']/input", "xpath:idRelative"], ["xpath=//input", "xpath:position"]],
+                    "value": "SDAVIS"
+                }, {
+                    "id": "bf044ba7-6dee-4bd3-b0e4-e78c65314729",
+                    "comment": "",
+                    "command": "click",
+                    "target": "id=Dd-6",
+                    "targets": [["id=Dd-6", "id"], ["name=Dd-6", "name"], ["css=#Dd-6", "css:finder"], ["xpath=//input[@id='Dd-6']", "xpath:attributes"], ["xpath=//div[@id='ic_Dd-6']/input", "xpath:idRelative"], ["xpath=//div[3]/div/div/input", "xpath:position"]],
+                    "value": ""
+                }, {
+                    "id": "b6286bfa-c7b2-40d6-b30f-23dfe6a111e0",
+                    "comment": "password",
+                    "command": "type",
+                    "target": "id=Dd-6",
+                    "targets": [["id=Dd-6", "id"], ["name=Dd-6", "name"], ["css=#Dd-6", "css:finder"], ["xpath=//input[@id='Dd-6']", "xpath:attributes"], ["xpath=//div[@id='ic_Dd-6']/input", "xpath:idRelative"], ["xpath=//div[3]/div/div/input", "xpath:position"]],
+                    "value": "Labware102$"
+                }, {
+                    "id": "17a70220-5ef9-475c-b56a-0e95d327c4be",
+                    "comment": "signin",
+                    "command": "click",
+                    "target": "css=.ButtonCaptionText",
+                    "targets": [["css=.ButtonCaptionText", "css:finder"], ["xpath=//button[@id='Dd-7']/span/span", "xpath:idRelative"], ["xpath=//button/span/span", "xpath:position"]],
+                    "value": ""
+                }, {
+                    "id": "5b6c9389-b882-4f44-ab8d-3713602b17e3",
+                    "comment": "Method Complete LogOn",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "8b1cf0fc-0122-4b48-9059-24a362fb45a4",
+                    "comment": "Method Start SelectClient",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "d52e8799-4d30-47cc-b528-a9a99c4a1c66",
+                    "comment": "{\"log\":\"Clicking on 'File or View' return\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"Verifying Sales Tax account\",\"returnMethod\":false,\"exceptionType\":\"ClientSelectionException\",\"errorType\":\"Validation\",\"commandType\":\"Default\",\"isPrivate\":false}",
+                    "command": "verifyElementPresent",
+                    "target": "id=caption2_Dl-t-4",
+                    "targets": [["id=caption2_Dl-t-4", "default"]],
+                    "value": ""
+                }, {
+                    "id": "dc9f0d4f-b675-4b20-be20-de0d0a575d9e",
+                    "comment": "{\"log\":\"\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"ClientSelectionException\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":false}",
+                    "command": "storeText",
+                    "target": "id=caption2_Dl-71-5",
+                    "targets": [["id=caption2_Dl-71-5", "id"], ["css=#caption2_Dl-71-5", "css:finder"], ["xpath=//span[@id='caption2_Dl-71-5']", "xpath:attributes"], ["xpath=//div[@id='Dl-71-5']/span", "xpath:idRelative"], ["xpath=//tbody[3]/tr[3]/td/div/div/div/div/table/tbody/tr/td/div/div/div/table/tbody/tr[2]/td/div[3]/div/span", "xpath:position"], ["xpath=//span[contains(.,'465915-010044')]", "xpath:innerText"]],
+                    "value": "registrationId"
+                }, {
+                    "id": "7df3801d-5d33-4aa0-abcf-34be8eaaa451",
+                    "comment": "{\"log\":\"Missing 'clicking' keyword\\n\",\"screenshot\":false,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"ClientSelectionException\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":false}",
+                    "command": "click",
+                    "target": "css=#caption2_Dl-l1-3 > .IconCaptionText",
+                    "targets": [["css=#caption2_Dl-l1-3 > .IconCaptionText", "css:finder"], ["xpath=//span[@id='caption2_Dl-l1-3']/span[2]", "xpath:idRelative"], ["xpath=//div[3]/div/a/span/span[2]", "xpath:position"]],
+                    "value": ""
+                }, {
+                    "id": "d7c3b490-d47c-44d3-8939-5e285d82248f",
+                    "comment": "Method Complete SelectClient",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "c449ab69-61b2-462f-96be-e50b0c9890a0",
+                    "comment": "Method Start SelectFilingPeriod",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "7b83e78c-f6b5-44a8-ab76-818a2e7c73b0",
+                    "comment": "Method Sub Call ValidateFilingFrequency",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "4a7224c1-06c1-4b24-a2f4-c5c2ebd5b804",
+                    "comment": "{\"log\":\"\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"FilingPeriodSelectionException\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":true}",
+                    "command": "storeText",
+                    "target": "id=l_Dg-4-4",
+                    "targets": [["id=l_Dg-4-4", "id"], ["linkText=30-Sep-2021", "linkText"], ["css=#l_Dg-4-4", "css:finder"], ["xpath=//a[contains(text(),'30-Sep-2021')]", "xpath:link"], ["xpath=//a[@id='l_Dg-4-4']", "xpath:attributes"], ["xpath=//span[@id='c_Dg-4-4']/a", "xpath:idRelative"], ["xpath=(//a[contains(@href, '#')])[20]", "xpath:href"], ["xpath=//div[2]/div/div[2]/table/tbody/tr/td/span/a", "xpath:position"], ["xpath=//a[contains(.,'30-Sep-2021')]", "xpath:innerText"]],
+                    "value": "filingPeriod1"
+                }, {
+                    "id": "28e11099-9aa2-4fe9-86b6-0b1d77362635",
+                    "comment": "{\"log\":\"\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"FilingPeriodSelectionException\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":true}",
+                    "command": "storeText",
+                    "target": "id=l_Dg-4-3",
+                    "targets": [["id=l_Dg-4-3", "id"], ["linkText=30-Jun-2021", "linkText"], ["css=#l_Dg-4-3", "css:finder"], ["xpath=//a[contains(text(),'30-Jun-2021')]", "xpath:link"], ["xpath=//a[@id='l_Dg-4-3']", "xpath:attributes"], ["xpath=//span[@id='c_Dg-4-3']/a", "xpath:idRelative"], ["xpath=(//a[contains(@href, '#')])[22]", "xpath:href"], ["xpath=//tr[2]/td/span/a", "xpath:position"], ["xpath=//a[contains(.,'30-Jun-2021')]", "xpath:innerText"]],
+                    "value": "filingPeriod2"
+                }, {
+                    "id": "917162b5-e853-4e29-b74e-7bcb93d0a675",
+                    "comment": "Method Sub Complete ValidateFilingFrequency",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "e623a10f-79c7-2148-a106-d119cf881e28",
+                    "comment": "Method Sub Call MethodCall1",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "4b1a323e-50a9-74e1-2289-5012eebe9da1",
+                    "comment": "{\"log\":\"\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":false,\"loginType\":\"\"}",
+                    "command": "storeTitle",
+                    "target": "val1",
+                    "targets": [],
+                    "value": "v1"
+                }, {
+                    "id": "398e53d5-411a-217c-0dab-cd28dbc210b9",
+                    "comment": "{\"log\":\"\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":false,\"loginType\":\"\"}",
+                    "command": "storeTitle",
+                    "target": "val2",
+                    "targets": [],
+                    "value": "v2"
+                }, {
+                    "id": "60b9ff9f-6a1a-fdd0-74d6-a442c94279e3",
+                    "comment": "Method Sub Complete MethodCall1",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "a19d9a5e-a967-4c7b-9989-1e9401c94d89",
+                    "comment": "{\"log\":\"clicking\",\"screenshot\":false,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"FilingPeriodSelectionException\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":false}",
+                    "command": "click",
+                    "target": "id=l_Dg-7-4",
+                    "targets": [["id=l_Dg-7-4", "id"], ["linkText=View or Amend Return", "linkText"], ["css=#l_Dg-7-4", "css:finder"], ["xpath=//a[contains(text(),'View or Amend Return')]", "xpath:link"], ["xpath=//a[@id='l_Dg-7-4']", "xpath:attributes"], ["xpath=//span[@id='c_Dg-7-4']/a", "xpath:idRelative"], ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"], ["xpath=//td[4]/span/a", "xpath:position"], ["xpath=//a[contains(.,'View or Amend Return')]", "xpath:innerText"]],
+                    "value": ""
+                }, {
+                    "id": "e4977f4b-0981-4d3f-bb7d-59e2dbc7458b",
+                    "comment": "Method Complete SelectFilingPeriod",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "8b1cf0fc-0122-4b48-9059-24a362fb45a4",
+                    "comment": "Method Start PostLogOnProcess",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "d52e8799-4d30-47cc-b528-a9a99c4a1c66",
+                    "comment": "{\"log\":\"Clicking on 'File or View' return\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"Verifying Sales Tax account\",\"returnMethod\":false,\"exceptionType\":\"ClientSelectionException\",\"errorType\":\"Validation\",\"commandType\":\"Default\",\"isPrivate\":false}",
+                    "command": "verifyElementPresent",
+                    "target": "id=caption2_Dl-t-4",
+                    "targets": [["id=caption2_Dl-t-4", "default"]],
+                    "value": ""
+                }, {
+                    "id": "dc9f0d4f-b675-4b20-be20-de0d0a575d9e",
+                    "comment": "{\"log\":\"\",\"screenshot\":true,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"ClientSelectionException\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":false}",
+                    "command": "storeText",
+                    "target": "id=caption2_Dl-71-5",
+                    "targets": [["id=caption2_Dl-71-5", "id"], ["css=#caption2_Dl-71-5", "css:finder"], ["xpath=//span[@id='caption2_Dl-71-5']", "xpath:attributes"], ["xpath=//div[@id='Dl-71-5']/span", "xpath:idRelative"], ["xpath=//tbody[3]/tr[3]/td/div/div/div/div/table/tbody/tr/td/div/div/div/table/tbody/tr[2]/td/div[3]/div/span", "xpath:position"], ["xpath=//span[contains(.,'465915-010044')]", "xpath:innerText"]],
+                    "value": "registrationId"
+                }, {
+                    "id": "7df3801d-5d33-4aa0-abcf-34be8eaaa451",
+                    "comment": "{\"log\":\"Missing 'clicking' keyword\\n\",\"screenshot\":false,\"screenshotTag\":\"Options\",\"screenshotComment\":\"\",\"returnMethod\":false,\"exceptionType\":\"ClientSelectionException\",\"errorType\":\"UnexpectedPage\",\"commandType\":\"Default\",\"isPrivate\":false}",
+                    "command": "click",
+                    "target": "css=#caption2_Dl-l1-3 > .IconCaptionText",
+                    "targets": [["css=#caption2_Dl-l1-3 > .IconCaptionText", "css:finder"], ["xpath=//span[@id='caption2_Dl-l1-3']/span[2]", "xpath:idRelative"], ["xpath=//div[3]/div/a/span/span[2]", "xpath:position"]],
+                    "value": ""
+                }, {
+                    "id": "d7c3b490-d47c-44d3-8939-5e285d82248f",
+                    "comment": "Method Complete PostLogOnProcess",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }
+            ]
+        }
+    ],
+    "suites": [{
+            "id": "dc873c64-2f9c-4341-aa3c-0d764693bf09",
+            "name": "Default Suite",
+            "persistSession": false,
+            "parallel": false,
+            "timeout": 300,
+            "tests": ["4d44d95f-2519-475a-90ba-f4266b81a0f3"]
+        }
+    ],
+    "urls": [],
+    "plugins": []
+}

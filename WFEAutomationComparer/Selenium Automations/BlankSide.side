@@ -1,0 +1,21 @@
+{
+  "id": "eaab875e-8e4b-4243-8cf9-98200d336ee3",
+  "version": "2.0",
+  "name": "BlankSide",
+  "url": "",
+  "tests": [{
+    "id": "ff769dc1-288d-4a6e-9bde-a11d5ef343a4",
+    "name": "BlankRecording",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "32f61ad7-0dea-4b11-af00-c570d9a44cdd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ff769dc1-288d-4a6e-9bde-a11d5ef343a4"]
+  }],
+  "urls": [],
+  "plugins": []
+}

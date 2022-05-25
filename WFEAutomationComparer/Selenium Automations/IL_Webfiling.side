@@ -1,0 +1,478 @@
+{
+    "id": "32102485-2cf7-47dc-a667-84dd10ea072d",
+    "version": "2.0",
+    "name": "IL_Webfiling",
+    "url": "https://webapps1.chicago.gov",
+    "tests": [{
+            "id": "12c027ba-9e44-448c-abc1-f5039c7e406we",
+            "name": "IL_Webfiling",
+            "commands": [{
+                    "id": "59408267-1934-43c6-8177-3acafae6bc7b",
+                    "comment": "",
+                    "command": "open",
+                    "target": "/AccountServices/login.jsp",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "1b5f1507-df55-4e3d-b1e2-bed10803aa3c",
+                    "comment": "",
+                    "command": "setWindowSize",
+                    "target": "1536x824",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "5587e700-43d3-4ce9-887c-767cd524a39c",
+                    "comment": "Method Start Login",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "26952d69-cb73-49b0-9272-3b90063610f6",
+                    "comment": "username",
+                    "command": "type",
+                    "target": "id=user",
+                    "targets": [
+                        ["id=user", "id"],
+                        ["name=j_username", "name"],
+                        ["css=#user", "css:finder"],
+                        ["xpath=//input[@id='user']", "xpath:attributes"],
+                        ["xpath=//div[@id='content-wrap']/div[2]/div/div/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+                        ["xpath=//input", "xpath:position"]
+                    ],
+                    "value": "AvalaraCHI"
+                }, {
+                    "id": "4c56f9d2-d5d8-4bb9-b014-2fbe98ae9d1e",
+                    "comment": "password",
+                    "command": "type",
+                    "target": "id=password",
+                    "targets": [
+                        ["id=password", "id"],
+                        ["name=j_password", "name"],
+                        ["css=#password", "css:finder"],
+                        ["xpath=//input[@id='password']", "xpath:attributes"],
+                        ["xpath=//div[@id='content-wrap']/div[2]/div/div/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+                        ["xpath=//div[2]/div/input", "xpath:position"]
+                    ],
+                    "value": "Orange1!"
+                }, {
+                    "id": "fc829284-3f75-4413-938a-1615112fdc39",
+                    "comment": "signin",
+                    "command": "click",
+                    "target": "xpath=//button[contains(.,'SIGN IN')]",
+                    "targets": [
+                        ["css=.btn", "css:finder"],
+                        ["xpath=//div[@id='content-wrap']/div[2]/div/div/div/div/div/form/div[3]/div/button", "xpath:idRelative"],
+                        ["xpath=//button", "xpath:position"],
+                        ["xpath=//button[contains(.,'SIGN IN')]", "xpath:innerText"]
+                    ],
+                    "value": ""
+                }, {
+                    "id": "e52112af-e056-400c-80ed-ba551faf07e9",
+                    "comment": "Method Complete Login",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "0dfa8c99-56d0-44f7-89e9-4bdbd3950fc2",
+                    "comment": "Method start SelectClient",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "6ef4e2ff-0fbc-44d0-9908-0abf0f1640fd",
+                    "comment": "Clicking on 'Make a Tax Payment'  link.",
+                    "command": "click",
+                    "target": "css=.taxPayments",
+                    "targets": [
+                        ["css=.taxPayments", "css:finder"],
+                        ["xpath=//div[@id='content-wrap']/div/div/div[2]/div/span/span", "xpath:idRelative"],
+                        ["xpath=//div/span/span", "xpath:position"]
+                    ],
+                    "value": "'Make a Tax Payment' link not found."
+                }, {
+                    "id": "bbbf4d4d-2d05-4d54-ad34-1025a4a0c163",
+                    "comment": "",
+                    "command": "store",
+                    "target": "426403",
+                    "targets": [],
+                    "value": "clientId"
+                }, {
+                    "id": "8d19f275-1305-4e1b-9b34-31a51faf3e3d",
+                    "comment": "Client selection page.|false",
+                    "command": "click",
+                    "target": "id=taxPaymentAccount",
+                    "targets": [],
+                    "value": "'Select a business account' dropdown not found."
+                }, {
+                    "id": "4a5837bd-8794-4b3d-8c8c-6a2cfd398612",
+                    "comment": "Selecting clientId : ${clientId}",
+                    "command": "click",
+                    "target": "xpath=//select[@id='taxPaymentAccount']/option[contains(.,'Account') and contains(.,'${clientId}')]",
+                    "targets": [
+                        ["id=taxPaymentAccount", "id"],
+                        ["name=taxPaymentAccount", "name"],
+                        ["css=#taxPaymentAccount", "css:finder"],
+                        ["xpath=//select[@id='taxPaymentAccount']", "xpath:attributes"],
+                        ["xpath=//div[@id='mainCol']/div/select", "xpath:idRelative"],
+                        ["xpath=//select", "xpath:position"],
+                        ["xpath=//select[contains(.,'Account # 426403 - Showpad, Inc. - 7')]", "xpath:innerText"]
+                    ],
+                    "value": "Client not found: ${clientId}"
+                }, {
+                    "id": "640d61de-78b5-45be-ae19-1a65f31208f7",
+                    "comment": "private",
+                    "command": "storeTitle",
+                    "target": "Tax Form Code #: 7550 - Personal Property Lease Transaction Tax",
+                    "targets": [],
+                    "value": "taxType"
+                }, {
+                    "id": "417ebf9c-6f43-49a5-bedf-8fd2db11a780",
+                    "comment": "Selecting taxtype: ${taxType}|true",
+                    "command": "click",
+                    "target": "xpath=//select/option[contains(.,'${taxType}')]",
+                    "targets": [],
+                    "value": "Tax type '${taxType}' not present in the dropdown."
+                }, {
+                    "id": "b62f03dc-02ca-4549-8ac9-b50a0c373715",
+                    "comment": "Method complete SelectClient",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "dfdfef9b-ae6f-4ff6-8968-0bad4fc3b237",
+                    "comment": "Method start EnterPaymentAmount",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "2623b87d-f2dd-4912-ab26-60b86df8c134",
+                    "comment": "",
+                    "command": "store",
+                    "target": "06/01/2021 - 06/30/2021",
+                    "targets": [],
+                    "value": "periodText"
+                }, {
+                    "id": "d8b90b83-466a-4a12-9004-fbf8c9e51256",
+                    "comment": "Filing period range ${periodText}.|false",
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//thead[contains(.,'Tax Form Code')]/following-sibling::tbody//tr[contains(.,'${periodText}')]",
+                    "targets": [],
+                    "value": "Filing period range ${periodText} not present on DOR. Please check if filing period or frequency is correct."
+                }, {
+                    "id": "6c03a927-b0e2-4595-8bc0-df22b70bdfb2",
+                    "comment": "paymentAmount",
+                    "command": "store",
+                    "target": "100",
+                    "targets": [],
+                    "value": "returnsSummary.RemittanceAmount"
+                }, {
+                    "id": "e0de4cd0-dd6c-4397-922d-8e1de93f0916",
+                    "comment": "Payment amount input box not found for filing period range ${periodText}|true",
+                    "command": "sendKeys",
+                    "target": "xpath=//thead[contains(.,'Tax Form Code')]/following-sibling::tbody//tr[contains(.,'${periodText}')]/td//input[@type='text']",
+                    "targets": [],
+                    "value": "${returnsSummary.RemittanceAmount}"
+                }, {
+                    "id": "6d1b2a55-4657-426b-a055-5f5bf042c990",
+                    "comment": "Clicking on 'Continue' button.",
+                    "command": "click",
+                    "target": "xpath=//input[@value='Continue']",
+                    "targets": [],
+                    "value": "'Continue' button not found after entering payment amount."
+                }, {
+                    "id": "8cc600fb-c408-4db5-86e6-09e966661901",
+                    "comment": "Clicking on 'checkout' link.|true",
+                    "command": "click",
+                    "target": "linkText=Checkout",
+                    "targets": [
+                        ["linkText=Checkout", "linkText"],
+                        ["css=.btn-warning", "css:finder"],
+                        ["xpath=//a[contains(text(),'Checkout')]", "xpath:link"],
+                        ["xpath=//div[@id='sidebar-collapse']/a", "xpath:idRelative"],
+                        ["xpath=(//a[contains(@href, '')])[17]", "xpath:href"],
+                        ["xpath=//div[3]/a", "xpath:position"],
+                        ["xpath=//a[contains(.,'Checkout')]", "xpath:innerText"]
+                    ],
+                    "value": "'Checkout' link not found."
+                }, {
+                    "id": "84cee51c-c99f-45c1-b736-cd03b49bbae2",
+                    "comment": "Method complete EnterPaymentAmount",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "b022cdd6-281e-4803-a61a-3177bf28890d",
+                    "comment": "Method start EnterBankDetails",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "b99e06cd-6f9e-4379-bfba-7b74ed5c795e",
+                    "comment": "Payment Method page.|false",
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//h3[contains(.,'Payment Method')]",
+                    "targets": [
+                        ["css=h3", "css:finder"],
+                        ["xpath=//div[@id='content-container']/div/h3", "xpath:idRelative"],
+                        ["xpath=//h3", "xpath:position"],
+                        ["xpath=//h3[contains(.,'Payment Method')]", "xpath:innerText"]
+                    ],
+                    "value": "'Payment Method' page not found."
+                }, {
+                    "id": "dc4bdfe8-9457-4c37-8b2d-a3d2ee016a23",
+                    "comment": "",
+                    "command": "click",
+                    "target": "id=paymentMethod2",
+                    "targets": [
+                        ["id=paymentMethod2", "id"],
+                        ["css=#paymentMethod2", "css:finder"],
+                        ["xpath=//input[@id='paymentMethod2']", "xpath:attributes"],
+                        ["xpath=//form[@id='paymentMethodForm']/fieldset/div/div/div/span[2]/input", "xpath:idRelative"],
+                        ["xpath=//span[2]/input", "xpath:position"]
+                    ],
+                    "value": ""
+                }, {
+                    "id": "ef96fa6e-cbce-4623-b287-68e984b0e628",
+                    "comment": "Clicking on 'Next' button.",
+                    "command": "click",
+                    "target": "name=next",
+                    "targets": [
+                        ["name=next", "name"],
+                        ["css=.btn:nth-child(2)", "css:finder"],
+                        ["xpath=//button[@name='next']", "xpath:attributes"],
+                        ["xpath=//form[@id='paymentMethodForm']/fieldset/div[2]/div/button[2]", "xpath:idRelative"],
+                        ["xpath=//button[2]", "xpath:position"],
+                        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+                    ],
+                    "value": "Next button not found"
+                }, {
+                    "id": "5aa26760-c7fb-4297-b984-4746f5e86dfb",
+                    "comment": "",
+                    "command": "store",
+                    "target": "125000024",
+                    "targets": [],
+                    "value": "paymentDetails[\"BankRoutingNum\"]"
+                }, {
+                    "id": "5db7a2b4-43ff-4e49-a62f-5e231a5a56e5",
+                    "comment": "",
+                    "command": "store",
+                    "target": "138110426019",
+                    "targets": [],
+                    "value": "paymentDetails[\"BankAccountNum\"]"
+                }, {
+                    "id": "a9c2f092-0ba6-43e5-a5f1-e1df8bf65711",
+                    "comment": "",
+                    "command": "store",
+                    "target": "Avalara Inc",
+                    "targets": [],
+                    "value": "paymentDetails[\"AccountHolder\"]"
+                }, {
+                    "id": "1b0532b3-5ab3-4b48-91e9-9f96f1180c96",
+                    "comment": "Entering routing number",
+                    "command": "sendKeys",
+                    "target": "id=routingNumber",
+                    "targets": [],
+                    "value": "${paymentDetails[\"BankRoutingNum\"]}"
+                }, {
+                    "id": "5ec319cb-d620-4dfc-88fd-88de7bd91347",
+                    "comment": "Entering account no",
+                    "command": "sendKeys",
+                    "target": "id=accountNumber",
+                    "targets": [],
+                    "value": "${paymentDetails[\"BankAccountNum\"]}"
+                }, {
+                    "id": "3bdd7f16-75fb-497f-b7da-61acdc426ad9",
+                    "comment": "Entering Account holder rname",
+                    "command": "sendKeys",
+                    "target": "id=name",
+                    "targets": [],
+                    "value": "${paymentDetails[\"AccountHolder\"]}"
+                }, {
+                    "id": "127798cb-bd4d-473f-ab51-ca84755e1a0b",
+                    "comment": "Clicking on 'Business' account type radio button.",
+                    "command": "click",
+                    "target": "id=accountType2",
+                    "targets": [
+                        ["id=accountType2", "id"],
+                        ["css=#accountType2", "css:finder"],
+                        ["xpath=//input[@id='accountType2']", "xpath:attributes"],
+                        ["xpath=//form[@id='checkForm']/fieldset/div[4]/div[2]/div/span[2]/input", "xpath:idRelative"],
+                        ["xpath=//span[2]/input", "xpath:position"]
+                    ],
+                    "value": "'Buisiness' account type radio button not found."
+                }, {
+                    "id": "fcff646b-27cd-4719-9023-31526ebfb30b",
+                    "comment": "Clicking on 'Next' button on Bank details page.|true",
+                    "command": "click",
+                    "target": "name=next",
+                    "targets": [
+                        ["name=next", "name"],
+                        ["css=.btn:nth-child(3)", "css:finder"],
+                        ["xpath=//button[@name='next']", "xpath:attributes"],
+                        ["xpath=//form[@id='checkForm']/fieldset/div[7]/div/button[3]", "xpath:idRelative"],
+                        ["xpath=//button[3]", "xpath:position"],
+                        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+                    ],
+                    "value": "'Next' button not found after entering Bank details."
+                }, {
+                    "id": "b8b6e3fa-92f3-46ca-b9c6-ca6cb9319184",
+                    "comment": "Method complete EnterBankDetails",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "d7980358-9a51-4fac-8500-3b0db2e1db20",
+                    "comment": "Method Start UploadFile",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "4101ccda-283c-4245-a878-bdc58f682a80",
+                    "comment": "assign",
+                    "command": "store",
+                    "target": "ErrorType.FileUpload",
+                    "targets": [],
+                    "value": "currentErrorType"
+                }, {
+                    "id": "07b84c9f-80fd-4000-a6dc-5f139142897d",
+                    "comment": "Method sub call SmartWindowsFileUpload",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "033cf9dd-8ee9-4675-ab1a-d053fb19da45",
+                    "comment": "Method sub complete SmartWindowsFileUpload",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "bc3d5ded-9c78-4f8c-9d0f-22829c7044ef",
+                    "comment": "Method Complete UploadFile",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "bdd79627-5880-405b-aa9b-46a2176a8aee",
+                    "comment": "Method start GetSummaryPage",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "eec311ce-47c8-4180-b997-0f06fd2719ec",
+                    "comment": "'Summary' page|false",
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//h3[contains(.,'Order Verification')]",
+                    "targets": [
+                        ["css=h3", "css:finder"],
+                        ["xpath=//div[@id='content-container']/div/h3", "xpath:idRelative"],
+                        ["xpath=//h3", "xpath:position"],
+                        ["xpath=//h3[contains(.,'Order Verification')]", "xpath:innerText"]
+                    ],
+                    "value": "'Summary' page not found."
+                }, {
+                    "id": "6b0b1d97-ed8f-494d-9374-89505fe2f453",
+                    "comment": "Method sub call GetWebfilingDataPreSubmit",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "6ccb7349-506f-424d-b1c9-be43fd92170e",
+                    "comment": "private",
+                    "command": "storeText",
+                    "target": "xpath=//table[@id='items']/tbody/tr/td[2]",
+                    "targets": [
+                        ["css=.odd > td:nth-child(2)", "css:finder"],
+                        ["xpath=//table[@id='items']/tbody/tr/td[2]", "xpath:idRelative"],
+                        ["xpath=//td[2]", "xpath:position"],
+                        ["xpath=//td[contains(.,'Account:426403, Tax Code:7550, Period End:06/30/2021, Payment Due:07/15/2021')]", "xpath:innerText"]
+                    ],
+                    "value": "summaryText"
+                }, {
+                    "id": "54b6bf68-80b0-4d20-a873-c789d35b8783",
+                    "comment": "private",
+                    "command": "storeText",
+                    "target": "xpath=//table[@id='items']/tbody/tr/td[4]",
+                    "targets": [
+                        ["css=.odd > .text-right", "css:finder"],
+                        ["xpath=//table[@id='items']/tbody/tr/td[4]", "xpath:idRelative"],
+                        ["xpath=//td[4]", "xpath:position"],
+                        ["xpath=//td[contains(.,'$100.00')]", "xpath:innerText"]
+                    ],
+                    "value": "paymentAmountOnSite"
+                }, {
+                    "id": "922b104f-c5b2-4e48-a3e2-dec33890f20c",
+                    "comment": "Method sub complete GetWebfilingDataPreSubmit",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "213ac5c8-d877-46b1-ad6b-28771a8d2de6",
+                    "comment": "Method sub call CommonHelper.CompareWebFilingData",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "02bb9c05-9f66-475a-b93a-3a8b4f0e13a4",
+                    "comment": "Method sub complete CommonHelper.CompareWebFilingData",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "f838cc0b-d503-46e3-9583-edc30bc9572c",
+                    "comment": "'Summary' page|true",
+                    "command": "verifyElementPresent",
+                    "target": "xpath=//h3[contains(.,'Order Verification')]",
+                    "targets": [
+                        ["css=h3", "css:finder"],
+                        ["xpath=//div[@id='content-container']/div/h3", "xpath:idRelative"],
+                        ["xpath=//h3", "xpath:position"],
+                        ["xpath=//h3[contains(.,'Order Verification')]", "xpath:innerText"]
+                    ],
+                    "value": "'Summary' page not found."
+                }, {
+                    "id": "30f4bb4d-7cc0-4d2a-8b67-a5abc1df30fc",
+                    "comment": "Method complete GetSummaryPage",
+                    "command": "",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }, {
+                    "id": "f06ec67d-5c60-496a-89bb-58b1ee7a34d6",
+                    "comment": "",
+                    "command": "close",
+                    "target": "",
+                    "targets": [],
+                    "value": ""
+                }
+            ]
+        }
+    ],
+    "suites": [{
+            "id": "0cdbfd0a-9b97-4203-8815-17b28f4bb93a",
+            "name": "Default Suite",
+            "persistSession": false,
+            "parallel": false,
+            "timeout": 300,
+            "tests": ["12c027ba-9e44-448c-abc1-f5039c7e406a"]
+        }
+    ],
+    "urls": ["https://webapps1.chicago.gov/"],
+    "plugins": []
+}

@@ -1,0 +1,528 @@
+{
+  "id": "e123a462-34d9-4228-a052-27fdf3c16b20",
+  "version": "2.0",
+  "name": "CO Springs Non-Zero Filing",
+  "url": "",
+  "tests": [{
+    "id": "4e787f5c-b282-433a-9b87-4f617abc26cc",
+    "name": "CO Springs Non-Zero Recording_Presubmit",
+    "commands": [{
+      "id": "d33077d5-58ce-4958-976f-a82e6bbb564c",
+      "comment": "Method start Login",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cb6d4c1-4c82-4d8f-a954-fb599b5205ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inner-content",
+      "targets": [
+        ["css=.inner-content", "css:finder"],
+        ["xpath=//div[@id='content_no_bg']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5f7093d-7c74-4a80-a350-29e42d542396",
+      "comment": "",
+      "command": "click",
+      "target": "name=login_username",
+      "targets": [
+        ["name=login_username", "name"],
+        ["css=.FormInput:nth-child(2) > .textfield", "css:finder"],
+        ["xpath=//input[@name='login_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13fbf210-89c8-40d9-be1e-2990039ae61f",
+      "comment": "",
+      "command": "type",
+      "target": "name=login_username",
+      "targets": [
+        ["name=login_username", "name"],
+        ["css=.FormInput:nth-child(2) > .textfield", "css:finder"],
+        ["xpath=//input[@name='login_username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "electronic.filing@avalara.com"
+    }, {
+      "id": "656cc4ec-a488-49e8-836f-141889e9a029",
+      "comment": "",
+      "command": "click",
+      "target": "name=login_password",
+      "targets": [
+        ["name=login_password", "name"],
+        ["css=.FormInput:nth-child(4) > .textfield", "css:finder"],
+        ["xpath=//input[@name='login_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eba6f319-d309-484a-899c-b5e7a2a5fcbb",
+      "comment": "",
+      "command": "type",
+      "target": "name=login_password",
+      "targets": [
+        ["name=login_password", "name"],
+        ["css=.FormInput:nth-child(4) > .textfield", "css:finder"],
+        ["xpath=//input[@name='login_password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Avalara1!"
+    }, {
+      "id": "0f0dcc81-2968-44e7-b76c-0d60d4935d52",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitbutton",
+      "targets": [
+        ["name=submitbutton", "name"],
+        ["css=.button1", "css:finder"],
+        ["xpath=//input[@name='submitbutton']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c444d0c7-c709-4b45-ad60-c5cfe977b217",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=.message > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?logout=1')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "578cfe55-2a54-43b1-b5e8-f1bb64d98221",
+      "comment": "Method complete Login",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9be4f9b-feec-43be-8527-0a7b5548e447",
+      "comment": "Method start ClientSelection",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bf65d2f-3b4a-4dcc-9d91-1dc8beab6dd8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=div:nth-child(7) > div:nth-child(1)",
+      "targets": [
+        ["css=div:nth-child(7) > div:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content_no_bg']/div[2]/div/div/fieldset/div/div/div/div[2]/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "226328a4-0b7a-487a-9d0e-6291c53f1263",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(3) > span > a",
+      "targets": [
+        ["css=div:nth-child(3) > span > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Submit Sales & Use Tax Return  (Jul 2021) (new)')]", "xpath:link"],
+        ["xpath=//div[@id='content_no_bg']/div[2]/div/div/fieldset/div/div/div/div[2]/div[5]/div[3]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/business-center/task/?businesstaskid=338474')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d7bfd6b-0fdf-4c18-aa95-95342b0e04c7",
+      "comment": "Method complete ClientSelection",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e823e624-d908-487e-9c53-78d788c7eae1",
+      "comment": "Method start DataEntry",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f1de360-9ce8-493f-83f8-f3c90ddaf3e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=taxformblock_920_101032",
+      "targets": [
+        ["id=taxformblock_920_101032", "id"],
+        ["name=taxformblock_920_101032", "name"],
+        ["css=#taxformblock_920_101032", "css:finder"],
+        ["xpath=//input[@id='taxformblock_920_101032']", "xpath:attributes"],
+        ["xpath=//tr[@id='row-taxformblock_920_101032']/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a496a082-2603-4170-8053-aefe3604ad9f",
+      "comment": "",
+      "command": "click",
+      "target": "id=row-taxformblock_920_101032",
+      "targets": [
+        ["id=row-taxformblock_920_101032", "id"],
+        ["css=#row-taxformblock_920_101032", "css:finder"],
+        ["xpath=//tr[@id='row-taxformblock_920_101032']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/fieldset/div/table[2]/tbody/tr/td/table/tbody/tr[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfa2a027-1b5c-484c-8597-7231d0a9efee",
+      "comment": "",
+      "command": "type",
+      "target": "id=taxformblock_920_101032",
+      "targets": [
+        ["id=taxformblock_920_101032", "id"],
+        ["name=taxformblock_920_101032", "name"],
+        ["css=#taxformblock_920_101032", "css:finder"],
+        ["xpath=//input[@id='taxformblock_920_101032']", "xpath:attributes"],
+        ["xpath=//tr[@id='row-taxformblock_920_101032']/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "0.00"
+    }, {
+      "id": "320959bb-5fe6-4c16-8ae0-ad882e58f183",
+      "comment": "",
+      "command": "click",
+      "target": "css=#row-taxformblock_920_101034 > .TaxFormFiller",
+      "targets": [
+        ["css=#row-taxformblock_920_101034 > .TaxFormFiller", "css:finder"],
+        ["xpath=//tr[@id='row-taxformblock_920_101034']/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2913ec6-0c20-4b06-8f8a-e6432e48912f",
+      "comment": "",
+      "command": "click",
+      "target": "id=row-taxformblock_920_101040",
+      "targets": [
+        ["id=row-taxformblock_920_101040", "id"],
+        ["css=#row-taxformblock_920_101040", "css:finder"],
+        ["xpath=//tr[@id='row-taxformblock_920_101040']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/fieldset/div/table[2]/tbody/tr/td/table/tbody/tr[6]", "xpath:idRelative"],
+        ["xpath=//tr[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1d632dd-bac6-4599-afa5-51139015bf40",
+      "comment": "",
+      "command": "type",
+      "target": "id=taxformblock_920_101040",
+      "targets": [
+        ["id=taxformblock_920_101040", "id"],
+        ["name=taxformblock_920_101040", "name"],
+        ["css=#taxformblock_920_101040", "css:finder"],
+        ["xpath=//input[@id='taxformblock_920_101040']", "xpath:attributes"],
+        ["xpath=//tr[@id='row-taxformblock_920_101040']/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]/input", "xpath:position"]
+      ],
+      "value": "0.00"
+    }, {
+      "id": "b66eac03-a58d-45c8-b132-a5f86997b11a",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset:nth-child(3)",
+      "targets": [
+        ["css=fieldset:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='form']/fieldset", "xpath:idRelative"],
+        ["xpath=//form/fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3db804b-bb2f-49c9-b4d9-186f3c171fa5",
+      "comment": "",
+      "command": "click",
+      "target": "id=row-taxformblock_920_101072",
+      "targets": [
+        ["id=row-taxformblock_920_101072", "id"],
+        ["css=#row-taxformblock_920_101072", "css:finder"],
+        ["xpath=//tr[@id='row-taxformblock_920_101072']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/fieldset/div/table[2]/tbody/tr/td/table/tbody/tr[22]", "xpath:idRelative"],
+        ["xpath=//tr[22]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0529f4c-80c4-4cc6-8776-94852073e776",
+      "comment": "",
+      "command": "type",
+      "target": "id=taxformblock_920_101072",
+      "targets": [
+        ["id=taxformblock_920_101072", "id"],
+        ["name=taxformblock_920_101072", "name"],
+        ["css=#taxformblock_920_101072", "css:finder"],
+        ["xpath=//input[@id='taxformblock_920_101072']", "xpath:attributes"],
+        ["xpath=//tr[@id='row-taxformblock_920_101072']/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[22]/td[3]/input", "xpath:position"]
+      ],
+      "value": "0.00"
+    }, {
+      "id": "ece9f9ba-18a2-4993-a12d-5b6a3f2355cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#row-taxformblock_920_101072 > .TaxFormFiller",
+      "targets": [
+        ["css=#row-taxformblock_920_101072 > .TaxFormFiller", "css:finder"],
+        ["xpath=//tr[@id='row-taxformblock_920_101072']/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[22]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c8a8c5f-c49f-4ab4-b42d-8d83086b81e6",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=taxformblock_920_101082",
+      "targets": [
+        ["id=taxformblock_920_101082", "id"],
+        ["name=taxformblock_920_101082", "name"],
+        ["css=#taxformblock_920_101082", "css:finder"],
+        ["xpath=//input[@id='taxformblock_920_101082']", "xpath:attributes"],
+        ["xpath=//tr[@id='row-taxformblock_920_101082']/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[27]/td[3]/input", "xpath:position"]
+      ],
+      "value": "Total Due And Payable on site"
+    }, {
+      "id": "d6d64ac0-7d73-4b34-a681-d2ac9704f773",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_company",
+      "targets": [
+        ["id=electronicsignature_company", "id"],
+        ["name=electronicsignature_company", "name"],
+        ["css=#electronicsignature_company", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_company']", "xpath:attributes"],
+        ["xpath=//span[@id='row-AyPwXwGGNM11']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "695f0b30-e63c-4e44-99d5-115469459183",
+      "comment": "",
+      "command": "type",
+      "target": "id=electronicsignature_company",
+      "targets": [
+        ["id=electronicsignature_company", "id"],
+        ["name=electronicsignature_company", "name"],
+        ["css=#electronicsignature_company", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_company']", "xpath:attributes"],
+        ["xpath=//span[@id='row-AyPwXwGGNM11']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Avalara"
+    }, {
+      "id": "de962d2d-b9b3-4f22-91da-4ddce0459360",
+      "comment": "",
+      "command": "type",
+      "target": "id=electronicsignature_phone",
+      "targets": [
+        ["id=electronicsignature_phone", "id"],
+        ["name=electronicsignature_phone", "name"],
+        ["css=#electronicsignature_phone", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_phone']", "xpath:attributes"],
+        ["xpath=//span[@id='row-AyPwXwGGNM12']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": "8777804848"
+    }, {
+      "id": "096cc701-1571-4ec9-9e60-fb0fa930906b",
+      "comment": "",
+      "command": "type",
+      "target": "id=electronicsignature_email",
+      "targets": [
+        ["id=electronicsignature_email", "id"],
+        ["name=electronicsignature_email", "name"],
+        ["css=#electronicsignature_email", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_email']", "xpath:attributes"],
+        ["xpath=//span[@id='row-AyPwXwGGNM13']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": "electronic.filing@avalara.com"
+    }, {
+      "id": "fc6b6c31-cc10-4864-92fe-dabce845349e",
+      "comment": "",
+      "command": "type",
+      "target": "id=electronicsignature_title",
+      "targets": [
+        ["id=electronicsignature_title", "id"],
+        ["name=electronicsignature_title", "name"],
+        ["css=#electronicsignature_title", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_title']", "xpath:attributes"],
+        ["xpath=//span[@id='row-tRJDL5Y7oI14']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr[2]/td/span/div[2]/input", "xpath:position"]
+      ],
+      "value": "Avalara Client Trust"
+    }, {
+      "id": "84d2a1d8-ae56-4abf-8958-67257017f6ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_date",
+      "targets": [
+        ["id=electronicsignature_date", "id"],
+        ["name=electronicsignature_date", "name"],
+        ["css=#electronicsignature_date", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_date']", "xpath:attributes"],
+        ["xpath=//span[@id='row-tRJDL5Y7oI15']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr[2]/td[2]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a10047db-ec4b-49b6-92cb-80f74e71642f",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_company",
+      "targets": [
+        ["id=electronicsignature_company", "id"],
+        ["name=electronicsignature_company", "name"],
+        ["css=#electronicsignature_company", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_company']", "xpath:attributes"],
+        ["xpath=//span[@id='row-AyPwXwGGNM11']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c90ab95-188b-4185-af2b-1bd109802270",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_phone",
+      "targets": [
+        ["id=electronicsignature_phone", "id"],
+        ["name=electronicsignature_phone", "name"],
+        ["css=#electronicsignature_phone", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_phone']", "xpath:attributes"],
+        ["xpath=//span[@id='row-AyPwXwGGNM12']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66975c42-6d65-42fe-a6e1-da09432dd8ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_email",
+      "targets": [
+        ["id=electronicsignature_email", "id"],
+        ["name=electronicsignature_email", "name"],
+        ["css=#electronicsignature_email", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_email']", "xpath:attributes"],
+        ["xpath=//span[@id='row-AyPwXwGGNM13']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d54cc05-f9cd-4e06-af52-2fb925b9327f",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_title",
+      "targets": [
+        ["id=electronicsignature_title", "id"],
+        ["name=electronicsignature_title", "name"],
+        ["css=#electronicsignature_title", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_title']", "xpath:attributes"],
+        ["xpath=//span[@id='row-tRJDL5Y7oI14']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr[2]/td/span/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3a053f9-0cd3-463a-b408-9fdfe979e4c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_date",
+      "targets": [
+        ["id=electronicsignature_date", "id"],
+        ["name=electronicsignature_date", "name"],
+        ["css=#electronicsignature_date", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_date']", "xpath:attributes"],
+        ["xpath=//span[@id='row-tRJDL5Y7oI15']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr[2]/td[2]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bedba32c-6ad0-4065-b3fb-98fcc5633015",
+      "comment": "",
+      "command": "type",
+      "target": "id=electronicsignature_date",
+      "targets": [
+        ["id=electronicsignature_date", "id"],
+        ["name=electronicsignature_date", "name"],
+        ["css=#electronicsignature_date", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_date']", "xpath:attributes"],
+        ["xpath=//span[@id='row-tRJDL5Y7oI15']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr[2]/td[2]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": "Sr Tax Analyst"
+    }, {
+      "id": "5d643c73-446b-415b-8ea9-072053d6bc6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=electronicsignature_name",
+      "targets": [
+        ["id=electronicsignature_name", "id"],
+        ["name=electronicsignature_name", "name"],
+        ["css=#electronicsignature_name", "css:finder"],
+        ["xpath=//input[@id='electronicsignature_name']", "xpath:attributes"],
+        ["xpath=//span[@id='row-tRJDL5Y7oI16']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//table[5]/tbody/tr[2]/td[3]/span/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3763d13-69d8-4010-8908-a9a2e6bc8da7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=3",
+      "targets": [
+        ["linkText=3", "linkText"],
+        ["css=.ui-state-highlight", "css:finder"],
+        ["xpath=//a[contains(text(),'3')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e1a8810-41d7-403d-a175-557b2ce50dc2",
+      "comment": "Method complete DataEntry",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26eb50c6-63a7-44be-966a-bdf96e337ef6",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset:nth-child(3)",
+      "targets": [
+        ["css=fieldset:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='form']/fieldset", "xpath:idRelative"],
+        ["xpath=//form/fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ee3df4b2-3c70-415d-ad8e-9153d51550ee",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4e787f5c-b282-433a-9b87-4f617abc26cc"]
+  }],
+  "urls": [],
+  "plugins": []
+}

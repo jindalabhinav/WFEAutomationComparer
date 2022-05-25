@@ -1,0 +1,88 @@
+{
+  "id": "7d349b3e-de8d-4e68-bbd2-0f39efb505bb",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://www.example.com",
+  "tests": [{
+    "id": "06473e8b-0efe-477f-89fc-f929ff62381a",
+    "name": "example.com test",
+    "commands": [{
+      "id": "7d4e606b-7bf9-4011-8629-c0eed9add5eb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "605fc409-4dd0-485d-bb50-d61e9b8cfc59",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1232x663",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e287124-b936-46d4-b03d-a1f003e6249e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=More information...",
+      "targets": [
+        ["linkText=More information...", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'More information...')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.iana.org/domains/example')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'More information...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbed36f5-782b-490a-8352-55a5ada696f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation > ul > li:nth-child(4) > a",
+      "targets": [
+        ["css=.navigation > ul > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/about')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b06c484d-2c81-44a2-b160-98760f146331",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Privacy Policy",
+      "targets": [
+        ["linkText=Privacy Policy", "linkText"],
+        ["css=#legalnotice li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Privacy Policy')]", "xpath:link"],
+        ["xpath=//div[@id='legalnotice']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.icann.org/privacy/policy')]", "xpath:href"],
+        ["xpath=//footer/div/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Privacy Policy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c0c5b9a-b90f-44d6-84e1-3f79973b4d8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wrapper > p:nth-child(3)",
+      "targets": [
+        ["css=.wrapper > p:nth-child(3)", "css:finder"],
+        ["xpath=//div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'This site uses cookies to deliver an efficient user experience and to help us see how the site is used. Learn more.OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cc3306c1-e85d-46f6-8c0e-c8a98399e8f7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["06473e8b-0efe-477f-89fc-f929ff62381a"]
+  }],
+  "urls": ["https://www.example.com/"],
+  "plugins": []
+}

@@ -1,0 +1,124 @@
+{
+  "id": "eaab875e-8e4b-4243-8cf9-98200d336ee3",
+  "version": "2.0",
+  "name": "BlankSide",
+  "url": "https://intime.dor.in.gov",
+  "tests": [{
+    "id": "ff769dc1-288d-4a6e-9bde-a11d5ef343a4",
+    "name": "BlankRecording",
+    "commands": [{
+      "id": "d1c3350c-6f04-46eb-a968-ec936d227fe4",
+      "comment": "",
+      "command": "open",
+      "target": "/eServices/_/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dab106fa-b25d-4278-9728-8d69dca5f62e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1444x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b2b0621-4a86-47ab-9863-5c58b5fdd7eb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Click Here to Start Over",
+      "targets": [
+        ["linkText=Click Here to Start Over", "linkText"],
+        ["css=.LinkButton", "css:finder"],
+        ["xpath=//a[contains(text(),'Click Here to Start Over')]", "xpath:link"],
+        ["xpath=//div[@id='FAST_ROOT_MANAGER__']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../ClearSession')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click Here to Start Over')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3206b855-8c3a-4241-ad7e-a0bc6ffeb710",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Click Here to Start Over",
+      "targets": [
+        ["linkText=Click Here to Start Over", "linkText"],
+        ["css=.LinkButton", "css:finder"],
+        ["xpath=//a[contains(text(),'Click Here to Start Over')]", "xpath:link"],
+        ["xpath=//div[@id='FAST_ROOT_MANAGER__']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../ClearSession')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click Here to Start Over')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e1220d0-3553-45ad-a721-e7f746508b12",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Click Here to Start Over",
+      "targets": [
+        ["linkText=Click Here to Start Over", "linkText"],
+        ["css=.LinkButton", "css:finder"],
+        ["xpath=//a[contains(text(),'Click Here to Start Over')]", "xpath:link"],
+        ["xpath=//div[@id='FAST_ROOT_MANAGER__']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../ClearSession')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click Here to Start Over')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c13a4eb-6fc8-4682-8a0e-aadfd6134fed",
+      "comment": "",
+      "command": "click",
+      "target": "css=#l_Df-9-5 .ColIconText",
+      "targets": [
+        ["css=#l_Df-9-5 .ColIconText", "css:finder"],
+        ["xpath=//a[@id='l_Df-9-5']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//tbody[3]/tr[2]/td/span/a/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ed26607-713b-442d-a483-9397ebc6f84b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#Dc-8 .ButtonCaptionText",
+      "targets": [
+        ["css=#Dc-8 .ButtonCaptionText", "css:finder"],
+        ["xpath=//button[@id='Dc-8']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e22370-9ab9-4c36-99e0-ffd39c9c487c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Dc-8 .ButtonCaptionText",
+      "targets": [
+        ["css=#Dc-8 .ButtonCaptionText", "css:finder"],
+        ["xpath=//button[@id='Dc-8']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71a3e661-8107-4b57-bc7c-45ad93d5d536",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#Dc-8 .ButtonCaptionText",
+      "targets": [
+        ["css=#Dc-8 .ButtonCaptionText", "css:finder"],
+        ["xpath=//button[@id='Dc-8']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "32f61ad7-0dea-4b11-af00-c570d9a44cdd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ff769dc1-288d-4a6e-9bde-a11d5ef343a4"]
+  }],
+  "urls": ["https://intime.dor.in.gov/"],
+  "plugins": []
+}
